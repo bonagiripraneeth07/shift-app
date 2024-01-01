@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_main2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="21dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.261" />
+
+            <TextView
+                android:id="@+id/text_main2_username"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                 android:layout_marginTop="-40dp"
+                android:background="@drawable/hellouser"
+                android:paddingLeft="130dp"
+                android:paddingTop="21dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="26dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginTop="-10dp"
+                android:src="@drawable/mainimage2" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/baseline_location_on_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textSize="21sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="130dp"
+                    android:text="City"/>
+
+            <Spinner
+                android:background="@drawable/spinnerbc"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="130dp"
+                android:layout_height="43dp"
+                android:id="@+id/city_home"
+               />
+                <ImageView
+                    android:layout_below="@+id/city_home"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="700dp"
+                    android:layout_height="700dp"
+                    android:src="@drawable/bc_rent_trucks"/>
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/city_home"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/rent_text" />
+
+                <ImageView
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/city_home"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="-96dp"
+                    android:src="@drawable/t1" />
+                <ImageView
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/city_home"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="46dp"
+                    android:src="@drawable/t2" />
+
+                <ImageView
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/city_home"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="180dp"
+                    android:src="@drawable/t3" />
+
+                <ImageView
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/city_home"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="320dp"
+                    android:src="@drawable/t4" />
+
+                <ImageView
+                    android:layout_width="500dp"
+                    android:layout_height="700dp"
+                    android:layout_below="@+id/city_home"
+                    android:layout_marginTop="714dp"
+                    android:src="@drawable/areas_serve" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="700dp"
+                    android:layout_below="@+id/city_home"
+                    android:layout_marginTop="1084dp"
+                    android:src="@drawable/renting_bhkheading" />
+                <ImageView
+                    android:id="@+id/renting_bhk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="700dp"
+                    android:layout_below="@+id/city_home"
+                    android:layout_marginTop="1430dp"
+                    android:src="@drawable/renting_bhk" />
+
+                <Button
+                    android:layout_width="123dp"
+                    android:id="@+id/booknowbtn_home"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/city_home"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="142dp"
+                    android:layout_marginTop="2114dp"
+                    android:layout_marginEnd="146dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="BOOK NOW" />
+<ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-15dp"
+    android:layout_marginLeft="180dp"
+    android:id="@+id/progressbar_home"
+    android:visibility="gone"
+    android:layout_below="@+id/booknowbtn_home"/>
+                <ImageView
+                    android:layout_width="700dp"
+                    android:layout_height="700dp"
+                    android:layout_below="@+id/renting_bhk"
+                    android:layout_marginTop="-108dp"
+                    android:src="@drawable/happycustomers1" />
+
+                <ViewFlipper
+                    android:id="@+id/imageslider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="320dp"
+                    android:autoStart="true"
+                    android:layout_marginTop="70dp"
+                    android:layout_below="@+id/renting_bhk"
+android:layout_marginLeft="10dp"
+                    android:overScrollMode="always"
+                    android:flipInterval="4000"
+                    android:inAnimation="@android:anim/slide_in_left"
+                    android:outAnimation="@android:anim/slide_out_right"
+                    >
+
+                    <ImageView
+                        android:layout_width="410dp"
+                        android:layout_height="400dp"
+                        android:src="@drawable/cr_1" />
+
+                    <ImageView
+                        android:layout_width="410dp"
+                        android:layout_height="400dp"
+                        android:src="@drawable/cr2"/>
+                    <ImageView
+                        android:layout_width="410dp"
+                        android:layout_height="400dp"
+                        android:src="@drawable/cr3"/>
+                    <ImageView
+                        android:layout_width="410dp"
+                        android:layout_height="400dp"
+                        android:src="@drawable/cr4"/>
+                    <ImageView
+                        android:layout_width="410dp"
+                        android:layout_height="400dp"
+                        android:src="@drawable/cr5"/>
+                </ViewFlipper>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginTop="-190dp"
+                android:src="@drawable/logotext" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+             android:id="@+id/bc_bc"
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginBottom="-20dp"
+            android:src="@drawable/pickbc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="116dp"
+            android:text="State"
+            android:textSize="24sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/spinner_city2"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="115dp"
+            android:background="@drawable/spinner2bc" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/spinner_city2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="-82dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/locality" />
+
+    <AutoCompleteTextView
+android:inputType="text"
+        android:id="@+id/locality"
+            android:hint="ex:hyderabad"
+            android:textColorHint="#878383"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/spinner_city2"
+             android:layout_marginLeft="5dp"
+            android:background="@drawable/frombc"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="165dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/spinner_city2"
+            android:layout_marginLeft="-50dp"
+            android:src="@drawable/pickup_address" />
+        <AutoCompleteTextView
+            android:inputType="text"
+            android:hint="ex:tankbund"
+            android:textColorHint="#878383"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/spinner_city2"
+android:id="@+id/pickupaddress"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/frombc"
+            android:textColor="@color/black" />
+        <ImageView
+            android:layout_width="165dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/spinner_city2"
+          android:layout_marginTop="20dp"
+            android:layout_marginLeft="-50dp"
+            android:src="@drawable/drop_address" />
+        <AutoCompleteTextView
+            android:inputType="text"
+            android:id="@+id/dropaddress"
+            android:hint="ex:jeedimetla"
+            android:textColorHint="#878383"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/spinner_city2"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/frombc"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="-90dp"
+            android:src="@drawable/date" />
+
+        <EditText
+            android:id="@+id/edit_date"
+            android:textColorHint="#878383"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/frombc"
+            android:hint="dd/m/year"
+             android:inputType="date"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/proceedbtn"
+            android:text="Proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner_truck"
+            android:layout_marginTop="94dp"/>
+
+
+</LinearLayout>
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="620dp"
+            android:layout_marginLeft="90dp"
+            android:text="vehicle"
+            android:textSize="24sp" />
+        <Spinner
+            android:id="@+id/spinner_truck"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="620dp"
+            android:layout_marginLeft="190dp"
+            android:background="@drawable/spinner2bc"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/proceedloading"
+            android:visibility="gone"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/spinner_truck"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="170dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading_proceed" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/availableimg"
+            android:layout_below="@id/bc_bc"
+            android:layout_width="700dp"
+            android:layout_height="40dp"
+            android:src="@drawable/avaliablepeople"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_below="@+id/availableimg"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/notfound"
+            android:src="@drawable/notfound"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/below_bc"
+             android:layout_below="@+id/bc_bc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+             <ImageView
+                  android:id="@+id/people1"
+              android:layout_marginTop="-0dp"
+              android:layout_width="420dp"
+              android:layout_height="200dp"
+              android:layout_marginLeft="5dp"
+          android:src="@drawable/people1"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/tata_ac_people2"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/tata_ac_people3"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/tata_ac_people4"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/tata_ac_people5"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/tata_ac_people6"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:visibility="gone"
+            android:layout_below="@+id/bc_bc"
+            android:orientation="vertical"
+            android:id="@+id/piaggio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/paggio_people1"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/paggio_people2"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/paggio_people3"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/paggio_people4"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:visibility="gone"
+            android:layout_below="@+id/bc_bc"
+            android:orientation="vertical"
+            android:id="@+id/jeeto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/jeeto_people1"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/jeeto_people2"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/jeeto_people3"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/jeeto_people4"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:visibility="gone"
+            android:layout_below="@+id/bc_bc"
+            android:orientation="vertical"
+            android:id="@+id/leyland"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/leyland_people1"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/leyland_people2"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/leyland_people3"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="420dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/leyland_people4"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
