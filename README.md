@@ -9,7 +9,7 @@
 
 ![detailsfill](https://github.com/bonagiripraneeth07/shift-app/assets/149886367/3b759ffd-5c6b-4ef2-987a-95205273fa71)
 ![vehicle choose opitons](https://github.com/bonagiripraneeth07/shift-app/assets/149886367/bcdd3dbf-37e4-44f2-9366-905cb2f5948f)
-![vehicle choose opitons](https://github.com/bonagiripraneeth07/shift-app/assets/149886367/bcdd3dbf-37e4-44f2-9366-905cb2f5948f)
+
 ![vehicles](https://github.com/bonagiripraneeth07/shift-app/assets/149886367/0c0bdfa6-359e-4b8f-9c39-d45207095e85)
 ![na](https://github.com/bonagiripraneeth07/shift-app/assets/149886367/61e636de-6f2b-4d37-86db-1603da185b7f)
 ![partilular](https://github.com/bonagiripraneeth07/shift-app/assets/149886367/e77dc5b0-b042-44ce-ac2f-8dfd28d22783)
