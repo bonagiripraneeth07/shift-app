@@ -25,13 +25,21 @@
 -SELECTING VEHICLES-
 
 ![partilular](https://github.com/bonagiripraneeth07/shift-app/assets/149886367/e77dc5b0-b042-44ce-ac2f-8dfd28d22783)
+
 -CALLING-
+
 ![call](https://github.com/bonagiripraneeth07/shift-app/assets/149886367/a70c2b20-b7e7-476d-87b1-917063a66812)
+
 -MESSAGING-
+
 ![message](https://github.com/bonagiripraneeth07/shift-app/assets/149886367/cfeec9ff-7dd6-4020-afb1-cdcbdce739b1)
+
 -ORDER-
+
 ![order](https://github.com/bonagiripraneeth07/shift-app/assets/149886367/33620d44-db66-4051-9b1f-37309a7a5b12)
+
 -ORDER CONFIRMATION SMS-
+
 ![orderconfimaton sms](https://github.com/bonagiripraneeth07/shift-app/assets/149886367/2baca483-1bab-4c65-9b06-3ea397d49242)
 
 ![order2](https://github.com/bonagiripraneeth07/shift-app/assets/149886367/0957a5ad-9e11-43f0-854f-b8f6bd8cb2a7) 
